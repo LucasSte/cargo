@@ -92,7 +92,7 @@ pub fn resolve_std<'gctx>(
         None,
         SourceId::for_git(
             &("https://github.com/anza-xyz/compiler-builtins".parse()).unwrap(),
-            GitReference::Tag("solana-tools-v1.43".to_string()),
+            GitReference::Rev("8e355a96707fd38c430259f18541c210c3495f19".to_string()),
         )?,
     )?);
     let crates_io_url = crate::sources::CRATES_IO_INDEX.parse().unwrap();
